@@ -25,7 +25,7 @@ jobs:
       - name: Checkout pico-sdk/develop
         uses: actions/checkout@v2
         with:
-          repository: raspberrypi/pico-sdk
+          repository: proto-x-app/pico-sdk
           ref: master
           path: pico-sdk
 

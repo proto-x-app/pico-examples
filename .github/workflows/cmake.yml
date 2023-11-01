@@ -7,7 +7,7 @@ env:
 
 jobs:
   build:
-    if: github.repository_owner == 'raspberrypi'
+    if: github.repository_owner == 'proto-x-app'
     runs-on: [self-hosted, Linux, X64]
 
     steps:
@@ -25,7 +25,7 @@ jobs:
     - name: Checkout pico-sdk/develop
       uses: actions/checkout@v2
       with:
-        repository: raspberrypi/pico-sdk
+        repository: proto-x-app/pico-sdk
         ref: master
         path: pico-sdk
 
