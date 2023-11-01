@@ -32,5 +32,4 @@ endif()
 
 # Hardware-specific examples in subdirectories:
 add_subdirectory(flash)
-add_subdirectory(pico_w)
 add_subdirectory(picoboard)
