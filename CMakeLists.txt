@@ -31,8 +31,6 @@ if (CMAKE_C_COMPILER_ID STREQUAL "GNU")
 endif()
 
 # Hardware-specific examples in subdirectories:
-add_subdirectory(cmake)
 add_subdirectory(flash)
-add_subdirectory(multicore)
 add_subdirectory(pico_w)
 add_subdirectory(picoboard)

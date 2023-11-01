@@ -17,6 +17,7 @@ jobs:
           echo "Cleaning up previous run"
           rm -rf "${{ github.workspace }}/pico-sdk"
           rm -rf "${{ github.workspace }}/pico-examples"
+
       - name: Checkout pico-examples
         uses: actions/checkout@v2
         with:
@@ -25,8 +26,8 @@ jobs:
       - name: Checkout pico-sdk/develop
         uses: actions/checkout@v2
         with:
-          repository: raspberrypi/pico-sdk
-          ref: develop
+          repository: proto-x-app/pico-sdk
+          ref: master
           path: pico-sdk
 
       - name: Checkout pico-sdk submodules
